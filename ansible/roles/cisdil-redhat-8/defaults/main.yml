@@ -21,7 +21,8 @@ rhel8cis_rule_1_9: true
 rhel8cis_rule_1_1: true
 rhel8cis_rule_1_1_1_1: true
 rhel8cis_rule_1_1_1_2: true
-rhel8cis_rule_1_1_1_3: true
+# UDF is needed by Azure agent - disable rule 1.1.1.3 for now
+rhel8cis_rule_1_1_1_3: false
 rhel8cis_rule_1_1_1_4: true
 rhel8cis_rule_1_1_1_5: true
 rhel8cis_rule_1_1_1_6: true
@@ -72,8 +73,9 @@ rhel8cis_rule_1_2_5: true
 rhel8cis_rule_1_3_1: true
 rhel8cis_rule_1_3_2: true
 rhel8cis_rule_1_3_3: true
-rhel8cis_rule_1_4_1: true
-rhel8cis_rule_1_4_2: true
+# Bootloader passwords don't work in Azure, disable section 1.4.x
+rhel8cis_rule_1_4_1: false
+rhel8cis_rule_1_4_2: false
 rhel8cis_rule_1_5_1: true
 rhel8cis_rule_1_5_2: true
 rhel8cis_rule_1_5_3: true
