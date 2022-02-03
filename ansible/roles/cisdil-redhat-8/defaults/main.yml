@@ -3,7 +3,7 @@
 rhel8cis_skip_for_travis: false
 
 rhel8cis_notauto: false
-rhel8cis_section1: false
+rhel8cis_section1: true
 rhel8cis_section2: true
 rhel8cis_section3: true
 rhel8cis_section4: true
