@@ -3,7 +3,7 @@
 rhel8cis_skip_for_travis: false
 
 rhel8cis_notauto: false
-rhel8cis_section1: true
+rhel8cis_section1: false
 rhel8cis_section2: true
 rhel8cis_section3: true
 rhel8cis_section4: true
@@ -37,9 +37,9 @@ rhel8cis_rule_1_1_1_13: false
 rhel8cis_rule_1_1_1_14: false
 rhel8cis_rule_1_1_1_15: false
 rhel8cis_rule_1_1_1_16: false
-rhel8cis_rule_1_1_1_17: true
+rhel8cis_rule_1_1_1_17: false
 rhel8cis_rule_1_1_1_18: true
-rhel8cis_rule_1_1_1_19: true
+rhel8cis_rule_1_1_1_19: false
 rhel8cis_rule_1_1_1_20: true
 rhel8cis_rule_1_1_1_21: true
 rhel8cis_rule_1_1_1_22: true
@@ -50,17 +50,17 @@ rhel8cis_rule_1_1_2: false
 rhel8cis_rule_1_1_3: false
 rhel8cis_rule_1_1_4: true
 rhel8cis_rule_1_1_5: true
-rhel8cis_rule_1_1_6: true
-rhel8cis_rule_1_1_7: true
-rhel8cis_rule_1_1_8: true
-rhel8cis_rule_1_1_9: true
+rhel8cis_rule_1_1_6: false
+rhel8cis_rule_1_1_7: false
+rhel8cis_rule_1_1_8: false
+rhel8cis_rule_1_1_9: false
 # Attempt to fix cloud-init issues
 rhel8cis_rule_1_1_10: false
 # Attempt to fix cloud-init issues
 rhel8cis_rule_1_1_11: false
-rhel8cis_rule_1_1_12: true
+rhel8cis_rule_1_1_12: false
 rhel8cis_rule_1_1_13: true
-rhel8cis_rule_1_1_14: true
+rhel8cis_rule_1_1_14: false
 rhel8cis_rule_1_1_15: true
 rhel8cis_rule_1_1_16: true
 # Attempt to fix cloud-init issues
@@ -251,7 +251,8 @@ rhel8cis_rule_5_5_1_2: true
 rhel8cis_rule_5_5_1_3: true
 rhel8cis_rule_5_5_1_4: true
 rhel8cis_rule_5_5_1_5: true
-rhel8cis_rule_5_6: true
+# Unlock root account
+rhel8cis_rule_5_6: false
 rhel8cis_rule_5_7: true
 
 # Section 6 rules
@@ -441,13 +442,13 @@ rhel8cis_vartmp:
     source: tmpfs
     fstype: tmpfs
     opts: "defaults,nodev,nosuid,noexec"
-    enabled: yes
+    enabled: no
 
 rhel8cis_tmp:
     source: tmpfs
     fstype: tmpfs
     opts: "defaults,nodev,nosuid,noexec"
-    enabled: yes
+    enabled: no
 
 rhel8cis_devshm:
     opts: "defaults,nodev,nosuid,noexec"
