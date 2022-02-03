@@ -29,13 +29,14 @@ rhel8cis_rule_1_1_1_6: true
 rhel8cis_rule_1_1_1_7: true
 rhel8cis_rule_1_1_1_8: true
 rhel8cis_rule_1_1_1_9: true
-rhel8cis_rule_1_1_1_10: true
-rhel8cis_rule_1_1_1_11: true
-rhel8cis_rule_1_1_1_12: true
-rhel8cis_rule_1_1_1_13: true
-rhel8cis_rule_1_1_1_14: true
-rhel8cis_rule_1_1_1_15: true
-rhel8cis_rule_1_1_1_16: true
+# Azure changes
+rhel8cis_rule_1_1_1_10: false
+rhel8cis_rule_1_1_1_11: false
+rhel8cis_rule_1_1_1_12: false
+rhel8cis_rule_1_1_1_13: false
+rhel8cis_rule_1_1_1_14: false
+rhel8cis_rule_1_1_1_15: false
+rhel8cis_rule_1_1_1_16: false
 rhel8cis_rule_1_1_1_17: true
 rhel8cis_rule_1_1_1_18: true
 rhel8cis_rule_1_1_1_19: true
@@ -43,7 +44,8 @@ rhel8cis_rule_1_1_1_20: true
 rhel8cis_rule_1_1_1_21: true
 rhel8cis_rule_1_1_1_22: true
 rhel8cis_rule_1_1_1_23: true
-rhel8cis_rule_1_1_2: true
+# Fix azure issues
+rhel8cis_rule_1_1_2: false
 # Attempt to fix cloud-init issues
 rhel8cis_rule_1_1_3: false
 rhel8cis_rule_1_1_4: true
